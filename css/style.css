@@ -1,0 +1,16 @@
+/*
+colors useed:
+background color: #688C83 (sage green)
+*/
+body{
+    background-color: #688C83; /*sage green*/
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4; /* 1.4 x the font size*/
+    color:antiquewhite; /*might change but still kinda nice*/
+}
+h1, h2, h3{
+    font-family: Barlow Condensed; /* I think a serif will look better */
+    font-weight:500;
+}
