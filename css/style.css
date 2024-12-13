@@ -1,16 +1,78 @@
 /*
 colors useed:
-background color: #688C83 (sage green)
+background color: #ADC9BF (sage green)
+text color: #0F3B06
 */
-body{
-    background-color: #688C83; /*sage green*/
-    font-family:'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4; /* 1.4 x the font size*/
-    color:antiquewhite; /*might change but still kinda nice*/
+body {
+  background-color: #adc9bf; /* sage green */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4; /* 1.4 x the font size */
+  color: #0f3b06;
 }
-h1, h2, h3{
-    font-family: EB Garamond;
-    
+
+h1,
+h2,
+h3 {
+  font-family: EB Garamond; /* more edits to come when spacing is better sorted out */
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: #0f3b06;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #53732a;
+}
+
+a:active {
+  color: #9ac56f;
+}
+
+.primary-button {
+  display: inline-block;
+  background-color: #c3ccb2;
+  color: #276c5b;
+  font-weight: 600;
+  padding: 13px;
+  border-radius: 30px;
+  border: 2px solid #0e362c; /* might remove */
+  transition: 0.2s opacity; /* what is this for? */
+  text-decoration: none;
+}
+
+.primary-button:hover,
+a:focus {
+  color: #276c5b;
+  opacity: 0.8; /* reduces opacity 80% */
+  text-decoration: none;
+}
+
+.button-secondary {
+  display: inline-block;
+  padding: 13px;
+  border-radius: 10px;
+  border: 2px solid #276c5b;
+  text-decoration: none;
+}
+
+.button-secondary:hover,
+a:focus {
+  opacity: 0.8;
 }
