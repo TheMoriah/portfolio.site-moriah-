@@ -15,21 +15,23 @@
 
 <body>
     <!-- for the header -->
-     <header>
+     <header class="css-box-shadow">
         <!-- for the navigation -->
-         <div>
-            <img src="img/icons/logo/logo.svg" alt="Moriah Chiang"> <!--logo>-->
+         <div class="container">
+            <img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"> <!--logo>-->
             <nav>
-                <a href="index.html" class="button-secondary">Projects</a>
-                <a href="about.html" class="button-secondary">About</a>
-                <a href="#contact" class="button-secondary">Contact</a>
+                <ul>
+                    <li><a href="index.html" class="button-secondary">Projects</a></li>
+                    <li><a href="about.html" class="button-secondary">About</a></li>
+                    <li><a href="#contact" class="button-secondary">Contact</a></li>
+                 </ul>
             </nav>
          </div>
      </header>
     
       <main>
         <div id="about"> <!--about page-->
-            <div> <!--about wrapper-->
+            <div class="container"> <!--about wrapper-->
                 <h1>Who is Moriah?</h1>
                 <picture>
                     <source srcset="img/profile-picture/me_profile@1x.jpg" media="(max-width: 767px)">
@@ -42,7 +44,7 @@
                             </p>
                             <a href="img/resume.pdf" class="primary-button" target="_blank">Check out my resume</a> <!--button to look at resume-->
                     </div> <!--end my story column-->
-                    <div id="skills.tools"> <!--skills & tools column-->
+                    <div class="row" id="skills.tools"> <!--skills & tools column-->
                         <h2>Skills & Tools</h2>
                         <div> <!--relevant skills-->
                             <h3>Relevant Skills</h3>
@@ -74,7 +76,7 @@
       </main> 
 
      <footer id="contact"> <!--footer block-->
-        <div> <!--footer wrapper-->
+        <div class="container"> <!--footer wrapper-->
             <h2>Get in Touch</h2>
             <p>Would you like to chat about my work and about a work opportunity? Feel free to call me at <a href="tel:4158454536">(415)845-4536</a> or email me at <a href="mailto:moriahchiang2@gmail.com">moriahchiang2@gmail.com</a>.</p> <!--Inviting paragraph. I may want to tweak this later-->
             <div> <!--social media-->

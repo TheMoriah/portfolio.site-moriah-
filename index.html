@@ -15,32 +15,34 @@
 
 <body>
     <!-- for the header -->
-     <header>
+     <header class="css-box-shadow">
         <!-- for the navigation -->
-         <div>
-            <img src="img/icons/logo/logo.svg" alt="Moriah Chiang"> <!--logo>-->
+         <div class="container">
+            <img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"> <!--logo>-->
             <nav>
-               <a href="index.html" class="button-secondary">Projects</a>
-               <a href="about.html" class="button-secondary">About</a>
-               <a href="#contact" class="button-secondary">Contact</a>
+               <ul>
+                  <li><a href="index.html" class="button-secondary">Projects</a></li>
+                  <li><a href="about.html" class="button-secondary">About</a></li>
+                  <li><a href="#contact" class="button-secondary">Contact</a></li>
+               </ul>
             </nav>
          </div>
      </header>
     
      <main>
             <div id="hero"> <!--hero block-->
-               <div> <!--Hero wrapper-->
+               <div class="container"> <!--Hero wrapper-->
                   <h1>Hi! My name is Moriah Chiang. 
                      <span>Welcome to my brand design portfolio!</span>
                   </h1>   
-                     <p>I am a digital designer that has experience in graphic design and product design, specializing in creating a brand identity for all sorts of companies.</p>
+                     <p id="me">I am a digital designer that has experience in graphic design and product design, specializing in creating a brand identity for all sorts of companies.</p>
                </div> <!--End hero wrapper-->
             </div> <!--End hero block-->
 
             <div id="projects"> <!--Work/projects block-->
-               <div> <!--Work/projects wrapper-->
+               <div class="container"> <!--Work/projects wrapper-->
                   <h2>My Projects</h2>
-                  <div> <!--Open row that holds 2 columns for Koi-->
+                  <div class="row float"> <!--Open row that holds 2 columns for Koi-->
                      <div> <!--Open picture column-->
                         <picture>
                            <source srcset="img/koi/koi-cover@1x.jpg" media="(max-width:767px)">
@@ -48,14 +50,14 @@
                         </picture>
                      </div> <!--End picture column-->
                      <div> <!--Open text column-->
-                        <h3>Koi Health App</h3>
+                        <h3>Koi</h3>
                         <p>Koi is a health app that focuses on building habits and completing goals. The app has a koi pond that tracks your progress. As the goal grows, so does the pond.</p> <!--Project description-->
-                        <p>Figma, Adobe Illustrator, Adobe Photoshop, Procreate</p> <!--Skills used in the project-->
-                        <a href="koi.html" class="primary-button">View me</a> <!--Button or link to see more of the project-->
+                        <p class="skills">Figma, Adobe Illustrator, Adobe Photoshop, Procreate</p> <!--Skills used in the project-->
+                        <a href="koi.html" class="primary-button view">View me</a> <!--Button or link to see more of the project-->
                      </div> <!--End of text column-->
                   </div> <!--End of the row that holds 2 columns for Koi-->
                  
-                  <div> <!--Open row that holds 2 columns for Spring Sing-->
+                  <div class="row float"> <!--Open row that holds 2 columns for Spring Sing-->
                      <div> <!--Open picture column-->
                         <picture>
                            <source srcset="img/spring-sing/cover@1x.jpg" media="(max-width:767px)">
@@ -64,9 +66,9 @@
                      </div> <!--End picture column-->
                      <div> <!--Open text column-->
                         <h3>Spring Sing 2023: April Fools</h3>
-                        <p>Designed an identity that aligned with the year’s theme of “April Fools”. The theme was to be kept consistent amongst all related materials.</p> <!--Project description-->
-                        <p>Layout design, Brand design, Adobe Illustrator, Adobe Photoshop, Procreate</p> <!--Skills used in the project-->
-                        <a href="#" class="primary-button">View me</a> <!--Button or link to see more of the project-->
+                        <p>Spring Sing is an annual skit performamce at Westmont College. All the dorms are competing to have the best performance that also incorporates the year's theme. 2023's theme was April Fools.</p> <!--Project description-->
+                        <p class="skills">Layout design, Brand design, Adobe Illustrator, Adobe Photoshop, Procreate</p> <!--Skills used in the project-->
+                        <a href="ss.html" class="primary-button view">View me</a> <!--Button or link to see more of the project-->
                      </div> <!--End of text column-->
                   </div> <!--End of the row that holds 2 columns for Spring Sing-->
                </div> <!--End work/projects wrapper-->
@@ -74,7 +76,7 @@
       </main>
 
      <footer id="contact"> <!--footer block-->
-        <div> <!--footer wrapper-->
+        <div class="container"> <!--footer wrapper-->
             <h2>Get in Touch</h2>
             <p>Would you like to chat about my work and about a work opportunity? Feel free to call me at <a href="tel:4158454536">(415)845-4536</a> or email me at <a href="mailto:moriahchiang2@gmail.com">moriahchiang2@gmail.com</a>.</p> <!--Inviting paragraph. I may want to tweak this later-->
             <div> <!--social media-->

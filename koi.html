@@ -15,75 +15,79 @@
 
 <body>
     <!-- for the header -->
-     <header>
+     <header class="css-box-shadow">
         <!-- for the navigation -->
-         <div>
-            <img src="img/icons/logo/logo.svg" alt="Moriah Chiang"> <!--logo>-->
+         <div class="container">
+            <img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"> <!--logo>-->
             <nav>
-                <a href="index.html" class="button-secondary">Projects</a>
-                <a href="about.html" class="button-secondary">About</a>
-                <a href="#contact" class="button-secondary">Contact</a>
+                <ul>
+                    <li><a href="index.html" class="button-secondary">Projects</a></li>
+                    <li><a href="about.html" class="button-secondary">About</a></li>
+                    <li><a href="#contact" class="button-secondary">Contact</a></li>
+                 </ul>
             </nav>
          </div>
      </header>
     
      <main>
-        <h1>Koi: Health App</h1>
-        <picture>
-            <source srcset="img/koi/title@1x.jpg" media="(max-width:767px)">
-            <img src="img/koi/title@2x.jpg" alt="Koi Case Study">
-        </picture>
-        <p>The app is made to help the user complete goals and build habits for a healthier life. This was also an app designed through the Career Foundry's product design course. In this project, I created a fully prototyped app that includes 6 main fetures that help the user cultivate a healthy lifestyle.</p>
+        <div> <!--intro-->
+            <div class="container">
+                <h1>Koi: Health App</h1>
+                <picture>
+                    <source srcset="img/koi/title@1x.jpg" media="(max-width:767px)">
+                    <img src="img/koi/title@2x.jpg" alt="Koi Case Study">
+                </picture>
+                <p>The app is made to help the user complete goals and build habits for a healthier life. This was also an app designed through the Career Foundry's product design course. In this project, I created a fully prototyped app that includes 6 main fetures that help the user cultivate a healthy lifestyle.</p>
+            </div>    
+        </div> <!--end intro-->
         <div id="process"> <!--my process-->
-            <h2>My Process</h2>
-                <div> <!--hypothesis-->
-                    <picture> <!--decorations page-->
-                        <source srcset="img/koi/deco@1x.png" media="(max-width:767px)">
-                        <img src="img/koi/deco@2x.png" alt="decorations">
-                    </picture>
-                    <picture> <!--goals page-->
-                        <source srcset="img/koi/goals@1x.png" media="(max-width:767px)">
-                        <img src="img/koi/goals@2x.png" alt="goals">
-                    </picture>
-                    <h3>Hypothesises</h3>
-                        <ul>
-                            <li>I believe that by creating well defined goals with small tasks, the user will be more likely to accomplish the goal and build a habit.</li>
-                            <li>I believe that having in app motivation that is linked to the tasks that can be completed will encourage the user to work on their goals.</li>
-                        </ul>
-                </div> <!--end hypothesis-->
-                <div> <!--user persona-->
-                    <picture>
-                        <source srcset="img/koi/personas@1x.jpg" media="(max-width:767px)">
-                        <img src="img/koi/personas@2x.jpg" alt="User personas">
-                    </picture>
-                        <h3>User Persona</h3>
-                        <p>Meet Sam and Jordan. They are the types of users that I designed Koi for. They are both rather young individuals and have a willingness to keep up their health as they get older. They are both very familiar with technology and would have no trouble learning how to use Koi. Sam is interested in curating healthier habits into their life. Jordan wants working out to become one of his hobbies that helps him build his confidence and his muscles.</p>
-                </div> <!--end user persona-->
-                <div> <!--user flow-->
-                    <picture>
-                        <source srcset="img/koi/userflow@1x.jpg" media="(max-width:767px)">
-                        <img src="img/koi/userflow@2x.jpg" alt="User flow">
-                    </picture>
-                        <h3>User Flow</h3>
-                        <p>The user flow is made to guide the user through preprogrammed steps towards their goals. Once the user signs in, they are brought to the pond, which acts as a dashboard, where they can see the goals they are working on. Then the user can choose the activity they want to do to complete the task.</p>
-                </div> <!--end user flow-->
-                  <div> <!--wireframes-->
-                    <picture> 
-                        <source srcset="img/koi/wireframes@1x.jpg" media="(max-width:767px)">
-                        <img src="img/koi/wireframes@2x.jpg" alt="Wireframes">
-                    </picture>
-                        <h3>Wireframes</h3>
-                        <p>The low fidelity wireframes outlined the basic structure of the app. After revisions, I designed the first version of a high fidelity wireframe. This was the version I conducted usability tests on. Adjustment based on the usablity tests, peer review feedback, and mentor feedback led me to the final version of the app.</p>
-                  </div> <!--end wireframe-->
-                  <div> <!--conclusion-->
-                    <h2>Conclusion</h2>
-                    <p>This was the first time I completed a product design project from start to finish. My graphic design background was a helpful first step to learning product design. The most difficult part of the process was conducting the user research as I did not have a good sense of what information was helpful for a design. Figma was also a difficult part of the practice as I only knew how to use the software in very basic and tedious ways. With more practice and picking up tips from more experienced users, I know I can improve on my efficiency in these processes. Never did I imagine that I would design my own app. This is an accomplishment I am really proud of.</p>
-                  </div> <!--end conclusion-->
+            <div class="container"> <!--process wrapper-->
+                <h2>My Process</h2>
+                    <div class="step"> <!--hypothesis-->
+                        <picture class="pross-img"> <!--decorations page-->
+                            <source srcset="img/koi/congrats@1x.jpg" media="(max-width:767px)">
+                            <img src="img/koi/congrats@2x.jpg" alt="congratulations">
+                        </picture>
+                        <h3>Hypothesises</h3>
+                            <ul>
+                                <li>I believe that by creating well defined goals with small tasks, the user will be more likely to accomplish the goal and build a habit.</li>
+                                <li>I believe that having in app motivation that is linked to the tasks that can be completed will encourage the user to work on their goals.</li>
+                            </ul>
+                    </div> <!--end hypothesis-->
+                    <div class="step"> <!--user persona-->
+                        <picture>
+                            <source srcset="img/koi/personas@1x.jpg" media="(max-width:767px)">
+                            <img src="img/koi/personas@2x.jpg" alt="User personas">
+                        </picture>
+                            <h3>User Persona</h3>
+                            <p>Meet Sam and Jordan. They are the types of users that I designed Koi for. They are both rather young individuals and have a willingness to keep up their health as they get older. They are both very familiar with technology and would have no trouble learning how to use Koi. Sam is interested in curating healthier habits into their life. Jordan wants working out to become one of his hobbies that helps him build his confidence and his muscles.</p>
+                    </div> <!--end user persona-->
+                    <div class="step"> <!--user flow-->
+                        <picture>
+                            <source srcset="img/koi/userflow@1x.jpg" media="(max-width:767px)">
+                            <img src="img/koi/userflow@2x.jpg" alt="User flow">
+                        </picture>
+                            <h3>User Flow</h3>
+                            <p>The user flow is made to guide the user through preprogrammed steps towards their goals. Once the user signs in, they are brought to the pond, which acts as a dashboard, where they can see the goals they are working on. Then the user can choose the activity they want to do to complete the task.</p>
+                    </div> <!--end user flow-->
+                    <div class="step"> <!--wireframes-->
+                        <picture> 
+                            <source srcset="img/koi/wireframes@1x.jpg" media="(max-width:767px)">
+                            <img src="img/koi/wireframes@2x.jpg" alt="Wireframes">
+                        </picture>
+                            <h3>Wireframes</h3>
+                            <p>The low fidelity wireframes outlined the basic structure of the app. After revisions, I designed the first version of a high fidelity wireframe. This was the version I conducted usability tests on. Adjustment based on the usablity tests, peer review feedback, and mentor feedback led me to the final version of the app.</p>
+                    </div> <!--end wireframe-->
+                    <div> <!--conclusion-->
+                        <h2>Conclusion</h2>
+                        <p>This was the first time I completed a product design project from start to finish. My graphic design background was a helpful first step to learning product design. The most difficult part of the process was conducting the user research as I did not have a good sense of what information was helpful for a design. Figma was also a difficult part of the practice as I only knew how to use the software in very basic and tedious ways. With more practice and picking up tips from more experienced users, I know I can improve on my efficiency in these processes. Never did I imagine that I would design my own app. This is an accomplishment I am really proud of.</p>
+                    </div> <!--end conclusion-->
+            </div> <!--end process wrapper-->
         </div> <!--end my process-->
      </main>
 
      <footer id="contact"> <!--footer block-->
-        <div> <!--footer wrapper-->
+        <div class="container"> <!--footer wrapper-->
             <h2>Get in Touch</h2>
             <p>Would you like to chat about my work and about a work opportunity? Feel free to call me at <a href="tel:4158454536">(415)845-4536</a> or email me at <a href="mailto:moriahchiang2@gmail.com">moriahchiang2@gmail.com</a>.</p> <!--Inviting paragraph. I may want to tweak this later-->
             <div> <!--social media-->
