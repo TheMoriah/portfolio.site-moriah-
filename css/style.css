@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  margin: 10vw;
+  margin: 5vw;
 }
 
 .css-box-shadow {
@@ -182,8 +182,7 @@ footer > div > div > a > img {
 }
 
 footer {
-  padding: 0 15px;
-  margin: 10vw;
+  margin: 5vw;
 }
 
 .pross-img {
@@ -197,4 +196,19 @@ footer {
 
 .step {
   margin-bottom: 8vh;
+}
+
+/* medium devices */
+@media only screens and (min-width: 640px) {
+  
+}
+
+/* large devices */
+@media only screens and (min-width: 1024px) {
+  
+}
+
+/* x-large devices */
+@media only screens and (min-width: 1440px) {
+  
 }
