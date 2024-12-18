@@ -145,11 +145,11 @@ nav > ul > li > a {
   margin: 25px 0;
 }
 
-.float picture {
+/* .float picture {
   float: left;
   max-width: 30%;
   margin: 0 20px 0 0;
-}
+} */
 
 #projects .row {
   padding-bottom: 20vh;
