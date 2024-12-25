@@ -33,7 +33,6 @@ main {
   box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.5);
-  position: fixed;
   top: 0;
   z-index: 1; /* makes nav bar highest in the stack */
 }
@@ -62,6 +61,14 @@ h3 {
   margin: 0.5em;
 }
 
+header {
+  text-align: center;
+  padding: 20px 0 5px;
+  background-color: #74c5c1;
+  position: fixed;
+  width: 100%;
+}
+
 a {
   color: #0f3b06;
   text-decoration: underline;
@@ -83,8 +90,40 @@ a:active {
   font-weight: 600;
   padding: 13px;
   border-radius: 30px;
-  border: 2px solid #0e362c; /* might remove */
-  transition: 0.2s opacity; /* what is this for? */
+  border: 2px solid #0e362c;
+  transition: 0.2s opacity; 
+    /* 
+      so, for a transitions to work, there needs to be a default and a hover/secondary state. 
+      need to code both the default and the hover/secondary state in order for the defined transition to be seen. 
+      define the start and the finish of this journey.
+      you can put multiple types of transitions on one line for the same type of default state
+        ie. primary button will have 3 different transisions so needs 3 different hover/secondary states to display all:
+            .button {
+              border: none;
+              font-family: inherit;
+              background-color: #05676e;
+              color: white !important;
+              text-decoration:none;
+              padding: 10px;
+              border-radius: 3px;
+              border-bottom: 2px solid #03474c;
+              transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
+            }
+
+            .button:hover {
+              cursor: pointer;
+              opacity: 0.8;
+            }
+
+            .button2:hover {
+              background-color: #489c79;
+            }
+
+            .button3:hover {
+              font-size: 18px;
+            }
+      info source: https://codepen.io/anon/pen/ZyxoMx
+    */  
   text-decoration: none;
 }
 
@@ -93,27 +132,6 @@ a:focus {
   color: #276c5b;
   opacity: 0.8; /* reduces opacity 80% */
   text-decoration: none;
-}
-
-/* .button-secondary {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #276c5b;
-  text-decoration: none;
-}
-
-.button-secondary:hover,
-a:focus {
-  opacity: 0.8;
-} */
-
-header {
-  text-align: center;
-  padding: 20px 0 5px;
-  background-color: #74c5c1;
-  position: fixed;
-  width: 100%;
 }
 
 nav > ul {
@@ -145,15 +163,9 @@ nav > ul > li > a {
   margin: 25px 0;
 }
 
-/* .float picture {
-  float: left;
-  max-width: 30%;
-  margin: 0 20px 0 0;
-} */
-
 #projects .row {
-  padding-bottom: 20vh;
-  border-bottom: 1px solid black;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid #0b280d;
 }
 
 #hero h1 {
@@ -182,7 +194,7 @@ footer > div > div > a > img {
 }
 
 footer {
-  margin: 5vw;
+  padding: 0 25px 0;
 }
 
 .pross-img {
@@ -198,17 +210,108 @@ footer {
   margin-bottom: 8vh;
 }
 
+.cube1 {
+  fill: green;
+}
+
+@keyframes color-change {
+  from {background-color: rgb(211, 175, 108);}
+  to {background-color: rgb(126, 119, 189);}
+}
+
+.bg {
+  animation-duration: 4s;
+  animation-name: color-change !important;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cube-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(50px,50px);}
+}
+
+.visit {
+  animation-duration: 4s;
+  animation-name: cube-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
 /* medium devices */
-@media only screens and (min-width: 640px) {
-  
+@media only screen and (min-width: 640px) { 
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 68px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }  /* span is already on a new line because of how things fit. However, I put a display code just in case I want it isn't on a new line later */
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #skills-tools {
+    margin-bottom: -0.2em;
+    margin-top: 1em;
+  }
+
+  h1
 }
 
 /* large devices */
-@media only screens and (min-width: 1024px) {
-  
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+    padding: 10px;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* x-large devices */
-@media only screens and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   
 }
