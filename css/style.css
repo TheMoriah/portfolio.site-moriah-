@@ -214,30 +214,50 @@ footer {
   fill: green;
 }
 
-@keyframes color-change {
-  from {background-color: rgb(211, 175, 108);}
-  to {background-color: rgb(126, 119, 189);}
+@keyframes bg-color-change {
+0% {fill: #87C9D6}
+60% {fill:#e3d19b}
+100% {fill:#1e2248}
 }
 
 .bg {
-  animation-duration: 4s;
-  animation-name: color-change !important;
+  animation-duration: 15s;
+  animation-name: bg-color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
+}
+
+@keyframes skyline-color {
+  0% {fill: #518297}
+  60% {fill:#b1986e}
+  100% {fill:#0d0c2e}
+}
+
+.skyline {
+  animation: 15s skyline-color infinite alternate ease;
 }
 
 @keyframes cube-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(50px,50px);}
+  from {transform: translate(-300px,50px);}
+  to {transform: translate(300px,50px);}
 }
 
-.visit {
-  animation-duration: 4s;
+.clouds {
+  animation-duration: 25s;
   animation-name: cube-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+#contact {
+  border-top: 1px solid black;
+  margin: 0 5% 0;
+}
+
+#home {
+  border-top: none;
 }
 
 /* medium devices */
