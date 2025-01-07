@@ -8,7 +8,8 @@ text color: #0f3b06
 }
 
 .logo {
-  max-width: 60px;
+  max-width: 50px;
+  margin-left: 10px;
 }
 
 body {
@@ -20,12 +21,8 @@ body {
   color: #0f3b06;
 }
 
-main {
-  margin: 5vw;
-}
-
 .css-box-shadow {
-/* start ------------ */
+  /* start ------------ */
   width: [object Object]px;
   height: [object Object]px;
   background: #adc9bf;
@@ -62,11 +59,42 @@ h3 {
 }
 
 header {
-  text-align: center;
-  padding: 20px 0 5px;
+  /* text-align: center; */
+  padding: 10px 0 4px;
   background-color: #74c5c1;
   position: fixed;
   width: 100%;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #486f4a;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 a {
@@ -91,10 +119,11 @@ a:active {
   padding: 13px;
   border-radius: 30px;
   border: 2px solid #0e362c;
-  transition: 0.2s opacity; 
-    /* 
-      so, for a transitions to work, there needs to be a default and a hover/secondary state. 
-      need to code both the default and the hover/secondary state in order for the defined transition to be seen. 
+  transition: 0.2s opacity;
+
+  /*
+      so, for a transitions to work, there needs to be a default and a hover/secondary state.
+      need to code both the default and the hover/secondary state in order for the defined transition to be seen.
       define the start and the finish of this journey.
       you can put multiple types of transitions on one line for the same type of default state
         ie. primary button will have 3 different transisions so needs 3 different hover/secondary states to display all:
@@ -123,7 +152,8 @@ a:active {
               font-size: 18px;
             }
       info source: https://codepen.io/anon/pen/ZyxoMx
-    */  
+    */
+
   text-decoration: none;
 }
 
@@ -137,12 +167,7 @@ a:focus {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -150,6 +175,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+
   /* increase spacing btn buttons?? */
 }
 
@@ -185,7 +211,8 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 120px;
+  margin: 5vw;
+  padding-top: 52px;
 }
 
 footer > div > div > a > img {
@@ -215,9 +242,9 @@ footer {
 }
 
 @keyframes bg-color-change {
-0% {fill: #87C9D6}
-60% {fill:#e3d19b}
-100% {fill:#1e2248}
+  0% { fill: #87c9d6; }
+  60% { fill: #e3d19b; }
+  100% { fill: #1e2248; }
 }
 
 .bg {
@@ -229,9 +256,9 @@ footer {
 }
 
 @keyframes skyline-color {
-  0% {fill: #518297}
-  60% {fill:#b1986e}
-  100% {fill:#0d0c2e}
+  0% { fill: #518297; }
+  60% { fill: #b1986e; }
+  100% { fill: #0d0c2e; }
 }
 
 .skyline {
@@ -239,8 +266,8 @@ footer {
 }
 
 @keyframes cube-move {
-  from {transform: translate(-300px,50px);}
-  to {transform: translate(300px,50px);}
+  from { transform: translate(-300px, 50px); }
+  to { transform: translate(300px, 50px); }
 }
 
 .clouds {
@@ -261,10 +288,22 @@ footer {
 }
 
 /* medium devices */
-@media only screen and (min-width: 640px) { 
+@media only screen and (min-width: 640px) {
+  nav > ul > li {
+    display: inline-block;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   nav {
@@ -309,7 +348,9 @@ footer {
     margin-top: 1em;
   }
 
-  h1
+  nav > ul {
+    margin: 1em 0;
+  }
 }
 
 /* large devices */
@@ -331,7 +372,6 @@ footer {
   }
 }
 
-/* x-large devices */
+/* x-large devices
 @media only screen and (min-width: 1440px) {
-  
-}
+} */

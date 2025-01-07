@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!--end font embedded code-->
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <script src="https://kit.fontawesome.com/353f4aab51.js" crossorigin="anonymous"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="YourName">
@@ -18,14 +19,17 @@
      <header class="css-box-shadow">
         <!-- for the navigation -->
          <div class="container">
-            <img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"> <!--logo>-->
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="button-secondary">Projects</a></li>
-                    <li><a href="about.html" class="button-secondary">About</a></li>
-                    <li><a href="#contact" class="button-secondary">Contact</a></li>
-                 </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle"> <!--hamburger-->
+                <a href="index.html"><img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"></a> <!--logo>-->
+                 <nav>
+                     <ul>
+                        <li><a href="index.html" class="button-secondary">Projects</a></li>
+                        <li><a href="about.html" class="button-secondary">About</a></li>
+                        <li><a href="#contact" class="button-secondary" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>    
          </div>
      </header>
     
@@ -48,7 +52,8 @@
                             <source srcset="img/koi/congrats@1x.jpg" media="(max-width:767px)">
                             <img src="img/koi/congrats@2x.jpg" alt="congratulations">
                         </picture>
-                        <h3>Hypothesises</h3>
+                        <h3>Problem & Hypothesises</h3>
+                            <p>The user is not sure how to begin their health journey but knows they want to live a healthier lifestyle. Koi eliminates the growing pains of starting with guided goal plans and a focus on growth.</p>
                             <ul>
                                 <li>I believe that by creating well defined goals with small tasks, the user will be more likely to accomplish the goal and build a habit.</li>
                                 <li>I believe that having in app motivation that is linked to the tasks that can be completed will encourage the user to work on their goals.</li>
@@ -101,7 +106,12 @@
             <p>Copyright Moriah Chiang 2024</p>
         </div> <!--end footer wrapper-->
      </footer> <!--end footer block-->
-   <script src="js/script.js"></script> 
+     <script>
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+     </script> <!--jquery-->
+     <script src="js/script.js"></script> 
 </body>
 
 </html>
