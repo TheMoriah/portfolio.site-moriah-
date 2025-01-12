@@ -23,9 +23,9 @@
                 <a href="index.html"><img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"></a> <!--logo>-->
                  <nav>
                      <ul>
-                        <li><a href="index.html" class="button-secondary">Projects</a></li>
-                        <li><a href="about.html" class="button-secondary">About</a></li>
-                        <li><a href="#contact" class="button-secondary" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
@@ -33,15 +33,21 @@
          </div>
      </header>
     
-     <main>
+     <main class="work">
         <div> <!--intro-->
+            <div> <!--back arrow-->
+                <a href="index.html" id="back">
+                    <i class="fa-solid fa-arrow-left"></i> 
+                    <span>Back to Projects</span>
+                </a>
+            </div>
             <div class="container">
                 <h1>Koi: Health App</h1>
                 <picture>
                     <source srcset="img/koi/title@1x.jpg" media="(max-width:767px)">
                     <img src="img/koi/title@2x.jpg" alt="Koi Case Study">
                 </picture>
-                <p>The app is made to help the user complete goals and build habits for a healthier life. This was also an app designed through the Career Foundry's product design course. In this project, I created a fully prototyped app that includes 6 main fetures that help the user cultivate a healthy lifestyle.</p>
+                <p class="text">The app is made to help the user complete goals and build habits for a healthier life. This was also an app designed through the Career Foundry's product design course. In this project, I created a fully prototyped app that includes 6 main fetures that help the user cultivate a healthy lifestyle.</p>
             </div>    
         </div> <!--end intro-->
         <div id="process"> <!--my process-->
@@ -52,38 +58,46 @@
                             <source srcset="img/koi/congrats@1x.jpg" media="(max-width:767px)">
                             <img src="img/koi/congrats@2x.jpg" alt="congratulations">
                         </picture>
-                        <h3>Problem & Hypothesises</h3>
-                            <p>The user is not sure how to begin their health journey but knows they want to live a healthier lifestyle. Koi eliminates the growing pains of starting with guided goal plans and a focus on growth.</p>
-                            <ul>
-                                <li>I believe that by creating well defined goals with small tasks, the user will be more likely to accomplish the goal and build a habit.</li>
-                                <li>I believe that having in app motivation that is linked to the tasks that can be completed will encourage the user to work on their goals.</li>
-                            </ul>
+                        <div class="text">
+                            <h3>Problem & Hypothesis</h3>
+                                <p>The user is not sure how to begin their health journey but knows they want to live a healthier lifestyle. Koi eliminates the growing pains of starting with guided goal plans and a focus on growth.</p>
+                                <ul>
+                                    <li>I believe that by creating well defined goals with small tasks, the user will be more likely to accomplish the goal and build a habit.</li>
+                                    <li>I believe that having in app motivation that is linked to the tasks that can be completed will encourage the user to work on their goals.</li>
+                                </ul>
+                        </div>
                     </div> <!--end hypothesis-->
                     <div class="step"> <!--user persona-->
-                        <picture>
+                        <picture class="pross-img">
                             <source srcset="img/koi/personas@1x.jpg" media="(max-width:767px)">
                             <img src="img/koi/personas@2x.jpg" alt="User personas">
                         </picture>
+                        <div class="text">
                             <h3>User Persona</h3>
                             <p>Meet Sam and Jordan. They are the types of users that I designed Koi for. They are both rather young individuals and have a willingness to keep up their health as they get older. They are both very familiar with technology and would have no trouble learning how to use Koi. Sam is interested in curating healthier habits into their life. Jordan wants working out to become one of his hobbies that helps him build his confidence and his muscles.</p>
-                    </div> <!--end user persona-->
+                        </div>
+                        </div> <!--end user persona-->
                     <div class="step"> <!--user flow-->
-                        <picture>
+                        <picture class="pross-img">
                             <source srcset="img/koi/userflow@1x.jpg" media="(max-width:767px)">
                             <img src="img/koi/userflow@2x.jpg" alt="User flow">
                         </picture>
+                        <div class="text">
                             <h3>User Flow</h3>
                             <p>The user flow is made to guide the user through preprogrammed steps towards their goals. Once the user signs in, they are brought to the pond, which acts as a dashboard, where they can see the goals they are working on. Then the user can choose the activity they want to do to complete the task.</p>
-                    </div> <!--end user flow-->
+                        </div>
+                        </div> <!--end user flow-->
                     <div class="step"> <!--wireframes-->
-                        <picture> 
+                        <picture class="pross-img"> 
                             <source srcset="img/koi/wireframes@1x.jpg" media="(max-width:767px)">
                             <img src="img/koi/wireframes@2x.jpg" alt="Wireframes">
                         </picture>
+                        <div class="text">
                             <h3>Wireframes</h3>
                             <p>The low fidelity wireframes outlined the basic structure of the app. After revisions, I designed the first version of a high fidelity wireframe. This was the version I conducted usability tests on. Adjustment based on the usablity tests, peer review feedback, and mentor feedback led me to the final version of the app.</p>
-                    </div> <!--end wireframe-->
-                    <div> <!--conclusion-->
+                        </div>
+                        </div> <!--end wireframe-->
+                    <div class="text"> <!--conclusion-->
                         <h2>Conclusion</h2>
                         <p>This was the first time I completed a product design project from start to finish. My graphic design background was a helpful first step to learning product design. The most difficult part of the process was conducting the user research as I did not have a good sense of what information was helpful for a design. Figma was also a difficult part of the practice as I only knew how to use the software in very basic and tedious ways. With more practice and picking up tips from more experienced users, I know I can improve on my efficiency in these processes. Never did I imagine that I would design my own app. This is an accomplishment I am really proud of.</p>
                     </div> <!--end conclusion-->
@@ -96,14 +110,14 @@
             <h2>Get in Touch</h2>
             <p>Would you like to chat about my work and about a work opportunity? Feel free to call me at <a href="tel:4158454536">(415)845-4536</a> or email me at <a href="mailto:moriahchiang2@gmail.com">moriahchiang2@gmail.com</a>.</p> <!--Inviting paragraph. I may want to tweak this later-->
             <div> <!--social media-->
-               <a href="LINKEDIN_URL" target="_blank"> <!--linked in-->
+               <a href="https://www.linkedin.com/in/moriah-chiang-147736158/" target="_blank" class="social"> <!--linked in-->
                   <img src="img/icons/linked.svg" alt="LinkedIn Logo">
                </a>
-               <a href="INSTAGRAM_URL" target="_blank"> <!--instagram-->
+               <a href="https://www.instagram.com/mo_riah.chiang/?hl=en" target="_blank" class="social"> <!--instagram-->
                   <img src="img/icons/insta.svg" alt="Instagram Logo">
                </a>
             </div>
-            <p>Copyright Moriah Chiang 2024</p>
+            <p>Copyright Moriah Chiang 2025</p>
         </div> <!--end footer wrapper-->
      </footer> <!--end footer block-->
      <script>

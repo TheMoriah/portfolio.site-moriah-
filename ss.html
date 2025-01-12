@@ -23,9 +23,9 @@
                 <a href="index.html"><img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"></a> <!--logo>-->
                 <nav>
                      <ul>
-                        <li><a href="index.html" class="button-secondary">Projects</a></li>
-                        <li><a href="about.html" class="button-secondary">About</a></li>
-                        <li><a href="#contact" class="button-secondary" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
@@ -33,15 +33,21 @@
          </div>
      </header>
     
-     <main>
+     <main class="work">
         <div> <!--intro-->
+            <div> <!--back arrow-->
+                <a href="index.html" id="back">
+                    <i class="fa-solid fa-arrow-left"></i> 
+                    <span>Back to Projects</span>
+                </a>
+            </div>
             <div class="container">
                 <h1>Spring Sing 2023: April Fools</h1>
                 <picture>
                     <source srcset="img/spring-sing/cover@1x.jpg" media="(max-width:767px)">
                     <img src="img/spring-sing/cover@2x.jpg" alt="Spring Sing 2023 April Fools theme">
                 </picture>
-                <p>I was tasked with creating a visual theme for the 2023 Spring Sing show that was made to be recognized across different pieces of media. The design not only had to be recognizable, it also had to reflect the energy of the show and theme.</p>
+                <p class="text">I was tasked with creating a visual theme for the 2023 Spring Sing show that was made to be recognized across different pieces of media. The design not only had to be recognizable, it also had to reflect the energy of the show and theme.</p>
             </div>    
         </div> <!--end intro-->
         <div id="process"> <!--my process-->
@@ -56,9 +62,11 @@
                             <source srcset="img/spring-sing/swatch@1x.png" media="(max-width:767px)">
                             <img src="img/spring-sing/swatch@2x.png" alt="swatch">
                         </picture>
-                        <h3>Logo</h3>
-                           <p>April Fools is a day meant for jokes and laughs. The logo was designed to reflect the fun connotation of this theme. I utilized vibrant colors and soft shapes for an approachable appearance.</p>
-                    </div> <!--end logo-->
+                        <div class="text">
+                            <h3>Logo</h3>
+                                <p>April Fools is a day meant for jokes and laughs. The logo was designed to reflect the fun connotation of this theme. I utilized vibrant colors and soft shapes for an approachable appearance.</p>
+                        </div>
+                            </div> <!--end logo-->
                     <div class="step"> <!--show program-->
                         <picture class="pross-img'">
                             <source srcset="img/spring-sing/outside@1x.jpg" media="(max-width:767px)">
@@ -68,18 +76,22 @@
                             <source srcset="img/spring-sing/inside@1x.jpg" media="(max-width:767px)">
                             <img src="img/spring-sing/inside@2x.jpg" alt="Show Program inside">
                         </picture>
+                        <div class="text">
                             <h3>Show Program</h3>
                             <p>I liked the use of the vibrant colored balls in the logo and continued using them in the show programs. The programs were made to summarize the show, provide a printed schedule, and highlight everyone who was involved in the show.</p>
+                        </div>
                     </div> <!--end show program-->
                     <div class="step"> <!--badges-->
                         <picture class="pross-img'">
                             <source srcset="img/spring-sing/badges@1x.jpg" media="(max-width:767px)">
                             <img src="img/spring-sing/badges@2x.jpg" alt="Show Program">
                         </picture>
+                        <div class="text">
                             <h3>Badges</h3>
                             <p>Anyone helping with the show needed a badge that let security know they are allowed backstage. This meant the badges had to be easily recognizable as related to the show. Similar to in the show program, colored balls were used again. I created badges for all access, reserved parking, and backstage access.</p>
+                        </div>
                     </div> <!--end badges-->
-                    <div> <!--conclusion-->
+                    <div class="text"> <!--conclusion-->
                         <h2>Conclusion</h2>
                         <p>After seeing the 3 previous years of Spring Sing's theme design, I was excited to make my own identifiable face for the show. The vibrant colors and the fun shapes match the energy and excitement of the show. However, these elements also make the design look kind of common. If I were to redo this design, I would incorporate the vibrant colors in more organic forms. This way the design would have a more unique and specific shape that other designs don't have. The design I created still makes me proud and I like the overall visual identity.</p>
                     </div> <!--end conclusion-->
@@ -92,14 +104,14 @@
             <h2>Get in Touch</h2>
             <p>Would you like to chat about my work and about a work opportunity? Feel free to call me at <a href="tel:4158454536">(415)845-4536</a> or email me at <a href="mailto:moriahchiang2@gmail.com">moriahchiang2@gmail.com</a>.</p> <!--Inviting paragraph. I may want to tweak this later-->
             <div> <!--social media-->
-               <a href="LINKEDIN_URL" target="_blank"> <!--linked in-->
+               <a href="https://www.linkedin.com/in/moriah-chiang-147736158/" target="_blank" class="social"> <!--linked in-->
                   <img src="img/icons/linked.svg" alt="LinkedIn Logo">
                </a>
-               <a href="INSTAGRAM_URL" target="_blank"> <!--instagram-->
+               <a href="https://www.instagram.com/mo_riah.chiang/?hl=en" target="_blank class="social"> <!--instagram-->
                   <img src="img/icons/insta.svg" alt="Instagram Logo">
                </a>
             </div>
-            <p>Copyright Moriah Chiang 2024</p>
+            <p>Copyright Moriah Chiang 2025</p>
         </div> <!--end footer wrapper-->
      </footer> <!--end footer block-->
      <script>

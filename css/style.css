@@ -102,6 +102,10 @@ a {
   text-decoration: underline;
 }
 
+.social {
+  text-decoration: none;
+}
+
 a:hover,
 a:focus {
   color: #53732a;
@@ -200,7 +204,8 @@ nav > ul > li > a {
 
 #hero {
   background-color: #0e4d50;
-  padding: 20px 0;
+  margin-top: 71px;
+  padding: 40px 0;
   display: inline-block;
   width: 100%;
   color: #cce7d2;
@@ -210,9 +215,8 @@ nav > ul > li > a {
   margin: 0 10vw 0;
 }
 
-main {
-  margin: 5vw;
-  padding-top: 52px;
+.work {
+  margin-top: 28%;
 }
 
 footer > div > div > a > img {
@@ -237,8 +241,21 @@ footer {
   margin-bottom: 8vh;
 }
 
-.cube1 {
-  fill: green;
+#pp {
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#ab-left {
+  display: none;
+}
+
+.caption {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
 }
 
 @keyframes bg-color-change {
@@ -287,8 +304,22 @@ footer {
   border-top: none;
 }
 
+.fa-arrow-left {
+  margin-left: 5%;
+}
+
+#back {
+  text-decoration: none;
+}
+
 /* medium devices */
 @media only screen and (min-width: 640px) {
+  .container {
+    padding: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   nav > ul > li {
     display: inline-block;
   }
@@ -312,15 +343,12 @@ footer {
     margin-top: 4px;
   }
 
-  main {
-    padding-top: 68px;
-  }
-
   body {
     font-size: 18px;
   }
 
   #hero {
+    margin-top: 99px;
     text-align: center;
   }
 
@@ -351,10 +379,45 @@ footer {
   nav > ul {
     margin: 1em 0;
   }
+
+  #about {
+    background-color: #0e4d50;
+    margin-top: 90px;
+    position: relative;
+  }
+
+  .meet {
+    color: #cce7d2;
+    position: absolute;
+    top: 36%;
+    left: 10%;
+  }
+
+  #ab-left {
+    display: inline-block;
+    width: 50%;
+  }
+
+  #ab-right {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .work {
+    margin-top: 18%;
+  }
 }
 
 /* large devices */
 @media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  #ab-left > span {
+    font-size: 1.5em;
+  }
+
   .col-lg-7 {
     width: 58.33%;
     padding: 10px;
@@ -365,10 +428,21 @@ footer {
     padding: 10px;
   }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  .meet {
+    top: 43%;
+    left: 13%;
+  }
+
+  .text {
+    margin: 50px 100px;
+  }
+
+  .pross-img {
+    width: 30%;
+  }
+
+  .work {
+    margin-top: 15%;
   }
 }
 

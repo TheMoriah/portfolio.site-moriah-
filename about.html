@@ -23,9 +23,9 @@
                 <a href="index.html"><img src="img/icons/logo/logo.svg" class="logo" alt="Moriah Chiang"></a> <!--logo-->
                  <nav>
                     <ul>
-                     <li><a href="index.html" class="button-secondary">Projects</a></li>
-                     <li><a href="about.html" class="button-secondary">About</a></li>
-                     <li><a href="#contact" class="button-secondary" onclick="menuToggle()">Contact</a></li>
+                     <li><a href="index.html">Projects</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                      </ul>
                 </nav>
@@ -34,49 +34,64 @@
      </header>
     
       <main>
-        <div id="about"> <!--about page-->
-            <div class="container"> <!--about wrapper-->
-                <h1>Who is Moriah?</h1>
-                <picture>
-                    <source srcset="img/profile-picture/me_profile@1x.jpg" media="(max-width: 767px)">
-                    <img src="img/profile-picture/me-profile@2x.jpg" alt="Moriah Chiang">
-                </picture>
-                <div> <!--row for columns-->
-                    <div id="story"> <!--my story column-->
-                        <h2>My Story</h2>
-                            <p>The first time I used Microsoft Word, back in elementary school, I spent 20 minutes picking out the font and deciding how I wanted my document setup.  In highschool I learned that you can get paid for keeping that same level of detail as a graphic designer. I worked as a graphic designer for 6 years and designed lots of layouts and logos. Product design is the newest addition to my design skill set, which I want to continue growing. Understanding the user and their needs to craft a design specifically for those needs has been my favorite part about product design. With these skills, I make a full brand identity consisting of printed materials, digital materials, applications and websites consistent with a style guide. Working on a design brings me back to when I was a kid crafting the best document.
-                            </p>
-                            <a href="img/resume.pdf" class="primary-button" target="_blank">Check out my resume</a> <!--button to look at resume-->
-                    </div> <!--end my story column-->
-                    <div class="row" id="skills.tools"> <!--skills & tools column-->
-                        <h2 id="skills-tools">Skills  & Tools</h2>
-                        <div class="col-md-6"> <!--relevant skills-->
-                            <h3>Relevant Skills</h3>
+        <div> <!--about page-->
+            <div> <!--hero block-->
+                <div id="about"> <!--hero wrapper-->
+                    <div id="ab-left" class="col-md-6"> <!--left about hero column-->
+                        <h1 class="meet">
+                        Moriah Chiang
+                        </h1>
+                        <span class="meet">Digital Designer</span>
+                    </div>
+                    <div id="ab-right"> <!--right about hero column-->
+                         <picture>
+                            <source srcset="img/profile-picture/me_profile@1x.jpg" media="(max-width: 767px)">
+                            <img src="img/profile-picture/me-profile@2x.jpg" alt="Moriah Chiang" id="pp">
+                        </picture>
+                    </div>
+                </div>
+            </div> <!--end hero wrapper-->
+
+            <div class="container"> <!--about block-->
+                <div> <!--about wrapper-->
+                    <div> <!--row for columns-->
+                        <div id="story" class="text"> <!--my story column-->
+                            <h2>Who is Moriah?</h2>
+                                <p>
+                                    Hello! I’m a digital designer that has experience in graphic design and product design, specializing in creating a brand identity for all sorts of companies. My goal when designing is to translate how a client describes their company into a style guide used on printed materials, digital materials, applications and websites. In my designs, I take into consideration user research and usability testing to affirm the design decisions are optimized for the user and free from usability issues. With each project, I enjoy improving my own abilities of creative problem solving to craft a user-centered experience. I’m looking forward to opportunities to work and grow in my abilities to offer user-centered designs.
+                                </p>
+                                <a href="img/resume.pdf" class="primary-button" target="_blank">Check out my resume</a> <!--button to look at resume-->
+                        </div> <!--end my story column-->
+                        <div class="row text" id="skills.tools"> <!--skills & tools column-->
+                            <h2 id="skills-tools">Skills  & Tools</h2>
+                            <div class="col-md-6"> <!--relevant skills-->
+                                <h3>Relevant Skills</h3>
+                                    <ul>
+                                        <li>User Research (Competive Analysis, User Interviews)</li>
+                                        <li>User Flow</li>
+                                        <li>Prototyping</li>
+                                        <li>Usability Testing</li>
+                                        <li>Style Guide</li>
+                                        <li>Layout Design</li>
+                                        <li>Logo Design</li>
+                                        <li>Basic HTML, CSS, & JavaScript</li>
+                                    </ul>
+                            </div> <!--end relevant skills-->
+                            <div class="col-md-6"> <!--tools I use-->
+                                <h3>Tools I use</h3>
                                 <ul>
-                                    <li>User Research (Competive Analysis, User Interviews)</li>
-                                    <li>User Flow</li>
-                                    <li>Prototyping</li>
-                                    <li>Usability Testing</li>
-                                    <li>Style Guide</li>
-                                    <li>Layout Design</li>
-                                    <li>Logo Design</li>
-                                    <li>Basic HTML, CSS, & JavaScript</li>
+                                    <li>Figma</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Adobe InDesign</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Procreate</li>
+                                    <li>VS Code</li>
                                 </ul>
-                        </div> <!--end relevant skills-->
-                        <div class="col-md-6"> <!--tools I use-->
-                            <h3>Tools I use</h3>
-                            <ul>
-                                <li>Figma</li>
-                                <li>Adobe Illustrator</li>
-                                <li>Adobe InDesign</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Procreate</li>
-                                <li>VS Code</li>
-                            </ul>
-                        </div>
-                    </div> <!--skills & tools column-->
-                </div> <!--end of row for columns-->
-            </div> <!--end about wrapper-->
+                            </div> <!--end tools-->
+                        </div> <!--skills & tools column-->
+                    </div> <!--end of row for columns-->
+                </div> <!--end about wrapper-->
+            </div> <!--end about block-->
         </div> <!--end about page-->
             
       </main> 
@@ -86,14 +101,14 @@
             <h2>Get in Touch</h2>
             <p>Would you like to chat about my work and about a work opportunity? Feel free to call me at <a href="tel:4158454536">(415)845-4536</a> or email me at <a href="mailto:moriahchiang2@gmail.com">moriahchiang2@gmail.com</a>.</p> <!--Inviting paragraph. I may want to tweak this later-->
             <div> <!--social media-->
-               <a href="LINKEDIN_URL" target="_blank"> <!--linked in-->
+               <a href="https://www.linkedin.com/in/moriah-chiang-147736158/" target="_blank" class="social"> <!--linked in-->
                 <img src="img/icons/linked.svg" alt="LinkedIn Logo">
                </a>
-               <a href="INSTAGRAM_URL" target="_blank"> <!--instagram-->
+               <a href="https://www.instagram.com/mo_riah.chiang/?hl=en" target="_blank" class="social"> <!--instagram-->
                 <img src="img/icons/insta.svg" alt="Instagram Logo">
                </a>
             </div>
-            <p>Copyright Moriah Chiang 2024</p>
+            <p>Copyright Moriah Chiang 2025</p>
         </div> <!--end footer wrapper-->
      </footer> <!--end footer block-->
   <script>
