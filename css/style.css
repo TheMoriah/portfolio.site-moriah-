@@ -117,7 +117,7 @@ a:active {
 
 .primary-button {
   display: inline-block;
-  background-color: #c3ccb2;
+  background-color: #d8decc;
   color: #276c5b;
   font-weight: 600;
   padding: 13px;
@@ -212,7 +212,8 @@ nav > ul > li > a {
 }
 
 #me {
-  margin: 0 10vw 0;
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 .work {
@@ -225,7 +226,8 @@ footer > div > div > a > img {
 }
 
 footer {
-  padding: 0 25px 0;
+  padding-right: 12.5px;
+  padding-left: 12.5px;
 }
 
 .pross-img {
@@ -297,7 +299,8 @@ footer {
 
 #contact {
   border-top: 1px solid black;
-  margin: 0 5% 0;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
 }
 
 #home {
