@@ -199,21 +199,23 @@ nav > ul > li > a {
 }
 
 #hero h1 {
-  text-align: center;
+  text-align: left;
+  margin-right: 10%;
+  font-size: 3em;
 }
 
 #hero {
   background-color: #0e4d50;
-  margin-top: 71px;
-  padding: 40px 0;
+  margin-top: 65px;
+  padding-top: 20%;
+  padding-bottom: 10px;
   display: inline-block;
   width: 100%;
   color: #cce7d2;
 }
 
 #me {
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: 35%;
 }
 
 .work {
@@ -351,13 +353,14 @@ footer {
   }
 
   #hero {
-    margin-top: 99px;
-    text-align: center;
+    padding-top: 20%;
+    text-align: left;
   }
 
-  #hero span {
-    display: block;
-  }  /* span is already on a new line because of how things fit. However, I put a display code just in case I want it isn't on a new line later */
+  #hero h1 {
+    margin-right: 20%;
+    font-size: 3.5em;;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -415,6 +418,15 @@ footer {
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 3em;
+  }
+
+  #hero {
+    padding-top: 15%;
+  }
+
+  #me {
+    font-size: 1.3em;
+    margin-right: 50%
   }
 
   #ab-left > span {
