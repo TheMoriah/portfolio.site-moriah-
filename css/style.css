@@ -359,7 +359,7 @@ footer {
 
   #hero h1 {
     margin-right: 20%;
-    font-size: 3.5em;;
+    font-size: 3.5em;
   }
 
   .col-md-6 {
@@ -412,6 +412,13 @@ footer {
   .work {
     margin-top: 18%;
   }
+
+  .program {
+    display: inline-block;
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* large devices */
@@ -458,6 +465,10 @@ footer {
 
   .work {
     margin-top: 15%;
+  }
+
+  .program {
+    width: 49%;
   }
 }
 
