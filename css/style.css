@@ -474,6 +474,21 @@ footer {
   .program {
     width: 49%;
   }
+
+  #shrink img{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #sf svg {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
 }
 
 /* x-large devices
