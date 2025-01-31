@@ -475,7 +475,7 @@ footer {
     width: 49%;
   }
 
-  #shrink img{
+  #shrink img {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -487,6 +487,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+
+  .caption {
+    text-align: center;
   }
 
 }
