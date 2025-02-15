@@ -493,6 +493,12 @@ footer {
     text-align: center;
   }
 
+  #poster {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 /* x-large devices
