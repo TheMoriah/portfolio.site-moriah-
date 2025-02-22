@@ -194,7 +194,7 @@ nav > ul > li > a {
 }
 
 #projects .row {
-  padding-bottom: 10vh;
+  padding-bottom: 4vh;
   border-bottom: 1px solid #0b280d;
 }
 
@@ -255,6 +255,10 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 13px;
+}
+
+#results {
+  margin-bottom: 5vw;
 }
 
 @keyframes bg-color-change {
