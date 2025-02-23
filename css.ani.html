@@ -26,7 +26,7 @@
       name="description"
       content="Short description including keywords related to pages content for SEO purposes"
     />
-    <title>My Projects</title>
+    <title>San Francisco CSS Animation</title>
   </head>
 
   <body>
@@ -45,12 +45,10 @@
           <!--logo>-->
           <nav>
             <ul>
-              <li><a href="index.html">Product Design</a></li>
+              <li><a href="index.html">Prodect Design</a></li>
               <li><a href="g.design.html">Graphic Design</a></li>
               <li><a href="about.html">About</a></li>
-              <li>
-                <a href="#contactHome" onclick="menuToggle()">Contact</a>
-              </li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
               <li>
                 <a
                   href="javascript:void(0);"
@@ -62,104 +60,22 @@
             </ul>
           </nav>
         </div>
-        <!--end hamburger-->
       </div>
     </header>
 
-    <main id="shrink">
-      <div id="hero">
-        <!--hero block-->
-        <div class="container">
-          <!--Hero wrapper-->
-          <h1>
-            My name is Moriah Chiang. <br>Welcome to my 
-            <span style="color:#E9E078">product design</span>
-            portfolio!
-          </h1>
-          <p id="me">
-            I am a product designer that has experience in graphic design and
-            digital design, creating designs that build an identity.
-          </p>
+    <main class="work" id="shrink">
+      <div>
+        <!--intro-->
+        <div>
+          <!--back arrow-->
+          <a href="index.html" id="back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Projects</span>
+          </a>
         </div>
-        <!--End hero wrapper-->
-      </div>
-      <!--End hero block-->
-
-      <div id="projects">
-        <!--Work/projects block-->
         <div class="container">
-          <!--Work/projects wrapper-->
-          <h2>My Projects</h2>
-          <div class="row">
-            <!--Open row that holds 2 columns for Koi-->
-            <div class="col-md-6 col-lg-7">
-              <!--Open picture column-->
-              <picture>
-                <source
-                  srcset="img/koi/koi-cover@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img src="img/koi/koi-cover@2x.jpg" alt="Koi Cover" />
-              </picture>
-            </div>
-            <!--End picture column-->
-            <div class="col-md-6 col-lg-5">
-              <!--Open text column-->
-              <h3>Koi</h3>
-              <p>
-                Created a health app that focuses on building habits and
-                completing goals. A central feature of Koi is a koi pond that
-                tracks your progress. As the goal grows, so does the pond.
-              </p>
-              <!--Project description-->
-              <p class="skills">
-                Figma, Adobe Illustrator, Adobe Photoshop, Procreate
-              </p>
-              <!--Skills used in the project-->
-              <a href="koi.html" class="primary-button">View me</a>
-              <!--Button or link to see more of the project-->
-            </div>
-            <!--End of text column-->
-          </div>
-          <!--End of the row that holds 2 columns for Koi-->
-
-          <div class="row">
-            <!--Open row that holds 2 columns for Spring Sing-->
-            <div class="col-md-6 col-lg-7">
-              <!--Open picture column-->
-              <picture>
-                <source
-                  srcset="img/portfolio/cover@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/portfolio/cover@2x.jpg"
-                  alt="Welcome to my portfolio"
-                />
-              </picture>
-            </div>
-            <!--End picture column-->
-            <div class="col-md-6 col-lg-5">
-              <!--Open text column-->
-              <h3>Self-Coded Product Design Portfolio</h3>
-              <p>
-                Coded a professional porftolio site to display all my design and art projects. Collaborated closely with a frontend developer to understand how to think like a developer.
-              </p>
-              <!--Project description-->
-              <p class="skills">
-                Layout design, HTML, CSS, JavaScript
-              </p>
-              <!--Skills used in the project-->
-              <a href="portfolio.html" class="primary-button">View me</a>
-              <!--Button or link to see more of the project-->
-            </div>
-            <!--End of text column-->
-          </div>
-          <!--End of the row that holds 2 columns for Spring Sing-->
-
-          <div class="row">
-            <!--Open row that holds 2 columns for css animation-->
-            <div class="col-md-6 col-lg-7" id="sf">
+          <h1>San Francisco CSS Animation</h1>
+          <div id="ani">
             <!--Open picture column-->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1586,31 +1502,87 @@
               </svg>
               <p class="caption">Illustration from pikisuperstar on Freepik</p>
             </div>
-            <!--End picture column-->
-            <div class="col-md-6 col-lg-5">
-              <!--Open text column-->
-              <h3>San Francisco CSS Animation</h3>
-              <p>
-                Coded a basic animation using CSS highlighting my home town. The
-                animation shows a day in San Francisco at the Golden Gate
-                Bridge.
-              </p>
-              <!--Project description-->
-              <p class="skills">HTML, CSS</p>
-              <!--Skills used in the project-->
-              <a href="css.ani.html" class="primary-button">View me</a>
-              <!--Button or link to see more of the project-->
-            </div>
-            <!--End of text column-->
-          </div>
-          <!--End of the row that holds 2 columns for css animation-->
+          <p class="text">
+            San Francisco is a beautiful city with it's own quirks. I'm proud to call this city my home. This animation, created in CSS, highlights one of the city's most popular landmark, the Golden Gate Bridge.
+          </p>
         </div>
-        <!--End work/projects wrapper-->
       </div>
-      <!--End of work/projects-->
+      <!--end intro-->
+      <div id="process">
+        <!--my process-->
+        <div class="container">
+          <!--process wrapper-->
+          <h2>My Process</h2>
+          <div class="step">
+            <!--purpose-->
+            <div id="ocean">
+              <picture class="pross-img">
+                <!--decorations page-->
+                <source
+                  srcset="img/css-ani/ocean@1x.jpg"
+                  media="(max-width:767px)"
+                >
+                <img src="img/css-ani/ocean@2x.jpg" alt="Ocean Ave">
+              </picture>
+              <p class="caption">San Francisco's Ocean Avenue</p>
+            </div>
+            <div class="text">
+              <h3>Purpose</h3>
+              <p>
+                CSS animation is responsible for moving elements such as a rotating loading wheel. Giving certain elements movements can be essential for the function of the website and overall increase the energy of the site. This project covers a few types of movements and the details required for an animation.
+              </p>
+            </div>
+          </div>
+          <!--end purpose-->
+          <div class="step">
+            <!--finding a vector illustration-->
+            <picture class="pross-img">
+              <source
+                srcset="img/css-ani/sf.vec@1x.jpg"
+                media="(max-width:767px)"
+              />
+              <img src="img/css-ani/sf.vec@2x.jpg" alt="User personas" />
+            </picture>
+            <div class="text">
+              <h3>Vector Illustration</h3>
+              <p>
+                The first step was to find a vector. This vector was sourced from Freepik and posted by pikisuperstar. Next the layers were properly labeled and grouped so that the SVG code had the proper ids.
+              </p>
+            </div>
+          </div>
+          <!--end finding a vector illustration-->
+          <div class="step">
+            <!--css animation-->
+            <picture class="pross-img">
+              <source
+                srcset="img/css-ani/ani@1x.jpg"
+                media="(max-width:767px)"
+              />
+              <img src="img/css-ani/ani@2x.jpg" alt="Animation Stages and Code" />
+            </picture>
+            <div class="text">
+              <h3>CSS Animation</h3>
+              <p>
+                Now that the file is ready to animate, I decided the clouds will move since SF is known for it's foggy and cloudy climate. Then the sky color is changed to reflect the sky changing to night and back to day. The animation depicts a glimpse into the Golden Gate Bridge's day.
+              </p>
+            </div>
+          </div>
+          <!--end css animation-->
+          <div class="text">
+            <!--conclusion-->
+            <h2>Conclusion</h2>
+            <p>
+              This project gave me appreciation for the animated details on websites. I often don't realize the animations used on a website because it has become so integrated into a website structure. In my future learnings, I want to incorporate element interactions that require the user to hover the mouse over to activate the animation. This can create an interesting element for the user to play with and add a unique movement to my portfolio site.
+            </p>
+          </div>
+          <!--end conclusion-->
+        </div>
+        <!--end process wrapper-->
+      </div>
+      <!--end my process-->
     </main>
 
-    <footer id="contactHome">
+    <footer id="contact">
       <!--footer block-->
       <div class="container">
         <!--footer wrapper-->

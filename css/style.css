@@ -427,6 +427,18 @@ footer {
   .navtoggle.responsive nav {
     padding: 0;
   }
+
+  #ani {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #ocean {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* large devices */
@@ -501,6 +513,14 @@ footer {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #ani {
+    width: 40%;
+  }
+
+  #ocean {
+    width: 80%;
   }
 }
 
