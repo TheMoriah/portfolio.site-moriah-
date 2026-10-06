@@ -4,7 +4,7 @@ import cornerBottomLeft from '../assets/shared/corner-bl.svg';
 import cornerBottomRight from '../assets/shared/corner-br.svg';
 import moriahPhoto from '../assets/shared/moriah-photo.svg';
 import resumePdf from '../assets/shared/resume.pdf';
-
+//tester
 export const AboutPage = () => {
   return (
     <div className="about-page">
